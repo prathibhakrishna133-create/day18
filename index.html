@@ -1,0 +1,551 @@
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My First Workspace</title>
+</head>
+<body>
+    <!-- Hello World -->
+    <h1>Hello World</h1>
+
+    <!-- Six heading levels -->
+    <h1>Main Heading (h1)</h1>
+    <h2>Section Heading (h2)</h2>
+    <h3>Subsection Heading (h3)</h3>
+    <h4>Detail Heading (h4)</h4>
+    <h5>Note Heading (h5)</h5>
+    <h6>Minor Heading (h6)</h6>
+
+    <!-- Paragraph about a hobby -->
+    <p>My favorite hobby is photography — I enjoy capturing everyday moments and exploring light and composition.</p>
+
+    <!-- b and i styling -->
+    <p>I like the <b>bold</b> look and the <i>italic</i> style in sentences.</p>
+
+    <!-- strong and em (semantic, preferred for accessibility) -->
+    <p><strong>Strong</strong> and <em>emphasized</em> text indicate meaning/importance to browsers and assistive technologies, which is why they are preferred.</p>
+
+    <!-- line break -->
+    <p>First line.<br>Second line after a break.</p>
+
+    <!-- horizontal rule between two paragraphs -->
+    <p>Paragraph above the rule.</p>
+    <hr>
+    <p>Paragraph below the rule.</p>
+
+    <!-- mark to highlight a word -->
+    <p>This is an <mark>important</mark> word to notice.</p>
+
+    <!-- sub and sup for chemical formula and exponent -->
+    <p>Chemical formula: H<sub>2</sub>O</p>
+    <p>Math exponent: x<sup>2</sup></p>
+
+    <!-- del and ins -->
+    <p>This sentence had a <del>mistake</del><ins>correction</ins> applied.</p>
+
+    <!-- blockquote and cite -->
+    <blockquote>
+        "The only limit to our realization of tomorrow is our doubts of today."
+    </blockquote>
+    <cite>— Franklin D. Roosevelt</cite>
+</body>
+</html>
+// ...existing code...
+// ...existing code...
+    <!-- blockquote and cite -->
+    <blockquote>
+        "The only limit to our realization of tomorrow is our doubts of today."
+    </blockquote>
+    <cite>— Franklin D. Roosevelt</cite>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#foods" title="Go to favorite foods">Foods</a></li>
+            <li><a href="#routine">Routine</a></li>
+            <li><a href="#todo">To-do</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Internal link to bottom -->
+    <p><a href="#bottom">Jump to Bottom</a></p>
+
+    <!-- Unordered list of favorite foods -->
+    <section id="foods">
+        <h2>Favorite Foods</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Sushi</li>
+            <li>Chocolate</li>
+        </ul>
+    </section>
+
+    <!-- Ordered list of morning routine -->
+    <section id="routine">
+        <h2>Morning Routine</h2>
+        <ol>
+            <li>Wake up</li>
+            <li>Brush teeth</li>
+            <li>Exercise</li>
+            <li>Shower</li>
+            <li>Breakfast</li>
+        </ol>
+    </section>
+
+    <!-- Nested list: ol with nested ul -->
+    <section id="todo">
+        <h2>To-do</h2>
+        <ol>
+            <li>Study
+                <ul>
+                    <li>Read chapter</li>
+                    <li>Take notes</li>
+                </ul>
+            </li>
+            <li>Grocery shopping
+                <ul>
+                    <li>Buy milk</li>
+                    <li>Buy bread</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Description list -->
+    <section>
+        <h2>Definitions</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Markup language for web pages.</dd>
+            <dt>CSS</dt>
+            <dd>Style sheet language for presentation.</dd>
+            <dt>JavaScript</dt>
+            <dd>Programming language for web behavior.</dd>
+        </dl>
+    </section>
+
+    <!-- Links: external, mailto, tel, clickable image, download -->
+    <section id="links">
+        <p><a href="https://www.google.com" target="_blank" rel="noopener noreferrer" title="Search with Google">Go to Google</a></p>
+        <p><a href="mailto:you@example.com">Email me</a></p>
+        <p><a href="tel:+1234567890">Call me</a></p>
+
+        <!-- Clickable image -->
+        <p>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" title="Visit example.com">
+                <img src="https://via.placeholder.com/150" alt="Placeholder image">
+            </a>
+        </p>
+
+        <!-- Download link for a PDF (place files/sample.pdf in your project) -->
+        <p><a href="files/sample.pdf" download>Download sample PDF</a></p>
+    </section>
+
+    <!-- Ordered list with Roman numerals -->
+    <section>
+        <h2>Roman Numeral List</h2>
+        <ol type="I">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </section>
+
+    <!-- Ordered list starting at 10 -->
+    <section>
+        <h2>Start at 10</h2>
+        <ol start="10">
+            <li>Tenth item</li>
+            <li>Eleventh item</li>
+        </ol>
+    </section>
+
+    <!-- Contact / bottom anchor -->
+    <footer id="bottom">
+        <h3 id="contact">Contact</h3>
+        <p>Contact info or footer content goes here.</p>
+    </footer>
+</body>
+</html>
+// ...existing code...
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My First Workspace</title>
+    <meta name="description" content="A workspace demonstrating HTML basics, multimedia, tables, forms, semantics and final challenges.">
+    <meta name="keywords" content="HTML,forms,tables,multimedia,semantic">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://via.placeholder.com/16" type="image/png">
+    <style>
+        /* Minimal inline styles for layout testing */
+        nav ul { list-style:none; padding:0; display:flex; gap:1rem; }
+        footer .columns { display:flex; gap:2rem; }
+        .hero { padding:2rem; background:#eef; }
+        table { border-collapse:collapse; }
+        table, th, td { border:1px solid #333; padding:6px; }
+        .gallery img { width:100px; height:100px; object-fit:cover; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hello World — My First Workspace</h1>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#multimedia" title="Multimedia section">Multimedia</a></li>
+            <li><a href="#forms" title="Forms section">Forms</a></li>
+            <li><a href="#semantics" title="Semantics section">Semantics</a></li>
+            <li><a href="#finals" title="Final challenges">Finals</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Phase 3: Multimedia & Tables -->
+    <section id="multimedia">
+        <h2>Images & Media</h2>
+
+        <!-- img with alt, width, height -->
+        <figure>
+            <img src="https://via.placeholder.com/300x150" alt="Sample landscape" width="300" height="150">
+            <figcaption>Sample image with alt text.</figcaption>
+        </figure>
+
+        <!-- picture element -->
+        <picture>
+            <source media="(min-width:600px)" srcset="https://via.placeholder.com/600x200">
+            <source media="(max-width:599px)" srcset="https://via.placeholder.com/300x100">
+            <img src="https://via.placeholder.com/300x100" alt="Responsive sample">
+        </picture>
+
+        <!-- SVG shape -->
+        <svg width="100" height="100" role="img" aria-label="red circle">
+            <circle cx="50" cy="50" r="40" fill="crimson"></circle>
+        </svg>
+
+        <!-- YouTube embed -->
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <!-- Google Map embed (example) -->
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019404648!2d-122.41941508468186!3d37.774929279759595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b1b1bdf%3A0x7a1d8b0c3b9b6a1e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Audio and Video -->
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <video controls width="320" poster="https://via.placeholder.com/320x180">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Table with caption, thead/tbody/tfoot, rowspan/colspan, inline background -->
+        <h3>Sample Data Table</h3>
+        <table border="1">
+            <caption>3x3 Sample Table with Row/Col spans</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Detail A</th>
+                    <th>Detail B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Merged Row</td>
+                    <td>Row1 Col2</td>
+                    <td>Row1 Col3</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="background-image:url('https://via.placeholder.com/150'); background-size:cover;">Spans two cols with bg</td>
+                </tr>
+                <tr>
+                    <td>Simple</td>
+                    <td>Data</td>
+                    <td>More</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="3">Table footer note</td></tr>
+            </tfoot>
+        </table>
+
+        <!-- Weekly schedule table -->
+        <h3>Weekly Schedule</h3>
+        <table border="1" id="schedule">
+            <caption>Weekly Schedule</caption>
+            <thead>
+                <tr><th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+            </thead>
+            <tbody>
+                <tr id="slot1"><th>08:00</th><td>Yoga</td><td>Study</td><td>Work</td><td>Work</td><td>Gym</td></tr>
+                <tr id="slot2"><th>12:00</th><td>Lunch</td><td>Lunch</td><td>Lunch</td><td>Lunch</td><td>Lunch</td></tr>
+                <tr id="slot3"><th>18:00</th><td>Free</td><td>Class</td><td>Free</td><td>Meet</td><td>Free</td></tr>
+            </tbody>
+        </table>
+
+        <p>Jump to schedule rows:
+            <a href="#slot1">08:00</a> |
+            <a href="#slot2">12:00</a> |
+            <a href="#slot3">18:00</a>
+        </p>
+
+        <!-- Gallery with table (3x3) -->
+        <h3>Gallery (3x3 Table)</h3>
+        <table border="1" class="gallery">
+            <tr>
+                <td><img src="https://via.placeholder.com/100" alt="g1"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g2"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g3"></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/100" alt="g4"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g5"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g6"></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/100" alt="g7"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g8"></td>
+                <td><img src="https://via.placeholder.com/100" alt="g9"></td>
+            </tr>
+        </table>
+
+    </section>
+
+    <!-- Phase 4: Forms & Input -->
+    <section id="forms">
+        <h2>Forms & Inputs</h2>
+
+        <!-- Survey form (10 questions using many input types) -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" placeholder="Alice" value="Alice">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                <label for="pwd">Password</label>
+                <input id="pwd" name="pwd" type="password" required>
+
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="13" max="120" value="30">
+
+                <label for="color">Favorite Color</label>
+                <input id="color" name="color" type="color" value="#ff0000">
+
+                <label for="birth">Birthday</label>
+                <input id="birth" name="birth" type="date">
+
+                <label for="range">Satisfaction</label>
+                <input id="range" name="range" type="range" min="0" max="10" value="7">
+
+                <label for="search">Search</label>
+                <input id="search" name="search" type="search" placeholder="Search...">
+
+                <label for="file">Resume (PDF)</label>
+                <input id="file" name="file" type="file" accept=".pdf">
+
+                <input type="hidden" name="sessionId" value="abc123">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <p>Choose one:</p>
+                <label><input type="radio" name="contact" value="email" checked> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+                <label><input type="radio" name="contact" value="none"> No contact</label>
+
+                <p>Choose multiple:</p>
+                <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+                <label><input type="checkbox" name="hobby" value="travel"> Travel</label>
+                <label><input type="checkbox" name="hobby" value="photography"> Photography</label>
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="us">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Your message..."></textarea>
+
+                <label for="city">City (autocomplete)</label>
+                <input list="cities" id="city" name="city">
+                <datalist id="cities">
+                    <option value="New York">
+                    <option value="San Francisco">
+                    <option value="London">
+                </datalist>
+
+                <label for="phone">Phone (tel)</label>
+                <input id="phone" name="phone" type="tel" placeholder="+1234567890">
+
+                <label for="readonly">Read-only code</label>
+                <input id="readonly" type="text" value="Fixed value" readonly>
+
+                <label for="disabled">Disabled field</label>
+                <input id="disabled" type="text" value="Cannot edit" disabled>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+    <!-- Phase 5: Semantics & Meta -->
+    <section id="semantics">
+        <h2>Semantics & Meta</h2>
+
+        <header>
+            <h3>Article Example</h3>
+            <time datetime="2026-02-14">Feb 14, 2026</time>
+        </header>
+
+        <article>
+            <h4>Sample News Article</h4>
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="News image">
+                <figcaption>Caption describing the image.</figcaption>
+            </figure>
+            <section>
+                <p>This is the lead paragraph of the article. <code>const x = 1;</code></p>
+            </section>
+            <aside>
+                <p>Sidebar: Related links or notes.</p>
+            </aside>
+        </article>
+
+        <details>
+            <summary>Click to read more</summary>
+            <p>Additional information shown on toggle.</p>
+        </details>
+
+        <address>
+            Contact: <a href="mailto:me@example.com">me@example.com</a><br>
+            Phone: <a href="tel:+1234567890">+1 234 567 890</a>
+        </address>
+
+    </section>
+
+    <!-- Phase 6: Final Challenges -->
+    <section id="finals">
+        <h2>Final Challenges</h2>
+
+        <!-- Resume (HTML only) -->
+        <article id="resume">
+            <h3>Resume — Jane Doe</h3>
+            <p>Web Developer</p>
+            <h4>Experience</h4>
+            <ul>
+                <li>Company A — Frontend Developer (2019-2022)</li>
+                <li>Company B — Intern (2018-2019)</li>
+            </ul>
+            <h4>Skills</h4>
+            <table border="1">
+                <thead><tr><th>Skill</th><th>Level</th></tr></thead>
+                <tbody>
+                    <tr><td>HTML</td><td>Advanced</td></tr>
+                    <tr><td>CSS</td><td>Intermediate</td></tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Survey (10-question compact) -->
+        <article id="survey">
+            <h3>Quick Survey</h3>
+            <form action="#" method="post">
+                <ol>
+                    <li>Age: <input type="number" name="q1" min="10" max="120"></li>
+                    <li>Gender: <select name="q2"><option>Prefer not</option><option>Male</option><option>Female</option></select></li>
+                    <li>Rate site: <input type="range" name="q3" min="1" max="5"></li>
+                    <li>Subscribe: <input type="checkbox" name="q4"></li>
+                    <li>Favorite: <input type="text" name="q5" list="favlist"><datalist id="favlist"><option>HTML</option><option>CSS</option></datalist></li>
+                    <li>Comments: <textarea name="q6"></textarea></li>
+                    <li>File: <input type="file" name="q7"></li>
+                    <li>Color pick: <input type="color" name="q8"></li>
+                    <li>Date visited: <input type="date" name="q9"></li>
+                    <li>Hidden token: <input type="hidden" name="q10" value="tok123"></li>
+                </ol>
+                <button type="submit">Send</button>
+            </form>
+        </article>
+
+        <!-- Restaurant Menu using description lists -->
+        <section id="menu">
+            <h3>Menu</h3>
+            <dl>
+                <dt>Margherita Pizza</dt><dd>$10 — Tomato, basil, mozzarella.</dd>
+                <dt>Spicy Ramen</dt><dd>$12 — Broth, noodles, egg.</dd>
+                <dt>Chocolate Cake</dt><dd>$6 — Rich chocolate slice.</dd>
+            </dl>
+        </section>
+
+        <!-- Comment section layout -->
+        <section id="comments">
+            <h3>Comments</h3>
+            <article>
+                <header><strong>Alice</strong> <time datetime="2026-02-16">Feb 16</time></header>
+                <p>Great page!</p>
+                <footer>Reply · Like</footer>
+            </article>
+        </section>
+
+        <!-- Landing page minimal hero -->
+        <section class="hero">
+            <h2>Hero Section</h2>
+            <p>Big heading, short pitch and a contact form below.</p>
+            <form>
+                <label for="leadEmail">Email</label>
+                <input id="leadEmail" type="email" placeholder="you@example.com">
+                <button type="submit">Get Started</button>
+            </form>
+        </section>
+
+        <!-- Glossary sample with anchors -->
+        <section id="glossary">
+            <h3>Glossary</h3>
+            <p><a href="#A">A</a> | <a href="#B">B</a></p>
+            <h4 id="A">A - Anchor</h4><p>Definition of Anchor.</p>
+            <h4 id="B">B - Blockquote</h4><p>Definition of Blockquote.</p>
+        </section>
+
+        <!-- Footer with 3 columns -->
+    </section>
+</main>
+
+<footer>
+    <div class="columns">
+        <div>
+            <h4>Company</h4>
+            <ul><li><a href="#resume">About</a></li><li><a href="#menu">Menu</a></li></ul>
+        </div>
+        <div>
+            <h4>Resources</h4>
+            <ul><li><a href="#multimedia">Media</a></li><li><a href="#forms">Forms</a></li></ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <address>me@example.com<br>+1 234 567 890</address>
+        </div>
+    </div>
+    <p>&copy; 2026 My First Workspace</p>
+</footer>
+</body>
+</html>
+// ...existing code...
